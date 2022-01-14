@@ -20,17 +20,16 @@ namespace Rhombus
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Skalieren();
         }
 
         Pen blackPen = new Pen(Color.Black);
+        Rectangle rectangle;
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
             graphics.SmoothingMode = SmoothingMode.HighQuality;
-
-            Rectangle rectangle = new Rectangle(10 ,10,110,110);
             
             Point obenMitte = new Point(rectangle.X + rectangle.Width/2 ,rectangle.Y);
             Point untenMitte = new Point(rectangle.X + rectangle.Width/2,rectangle.Height + rectangle.Y);
@@ -47,6 +46,22 @@ namespace Rhombus
             path.CloseFigure();
 
             graphics.DrawPath(blackPen, path);
+        }
+
+        private void Form1_ResizeEnd(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            Skalieren();
+            Refresh();
+        }
+
+        private void Skalieren()
+        {
+            rectangle = new Rectangle(0, 0, ClientSize.Width, ClientSize.Height);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Rhombus
             Rhombus frmRhombus = new Rhombus();
             frmRhombus.Show();
             Minimize();
-
+            
         }
 
         private void Minimize()

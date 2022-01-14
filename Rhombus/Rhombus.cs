@@ -59,9 +59,18 @@ namespace Rhombus
             rectangle = new Rectangle(0, 0, ClientSize.Width, ClientSize.Height);
         }
 
-        private void btnRhombus_Click(object sender, EventArgs e)
+        private void Rhombus_FormClosing(object sender, FormClosingEventArgs e)
         {
+            FormCollection fc = Application.OpenForms;
 
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "Menue")
+                {
+                    Form form = frm;
+                    frm.WindowState = FormWindowState.Normal;
+                }
+            }
         }
     }
 }

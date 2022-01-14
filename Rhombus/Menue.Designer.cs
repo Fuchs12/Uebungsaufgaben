@@ -29,19 +29,33 @@ namespace Rhombus
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnRhombus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // UebungsaufgabeMenue
+            // btnRhombus
+            // 
+            this.btnRhombus.Location = new System.Drawing.Point(37, 75);
+            this.btnRhombus.Name = "btnRhombus";
+            this.btnRhombus.Size = new System.Drawing.Size(145, 63);
+            this.btnRhombus.TabIndex = 1;
+            this.btnRhombus.Text = "Rhombus";
+            this.btnRhombus.UseVisualStyleBackColor = true;
+            this.btnRhombus.Click += new System.EventHandler(this.btnRhombus_Click);
+            // 
+            // Menue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "UebungsaufgabeMenue";
+            this.Controls.Add(this.btnRhombus);
+            this.Name = "Menue";
             this.Text = "Übungsaufgabe Menü";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnRhombus;
     }
 }

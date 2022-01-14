@@ -58,5 +58,10 @@ namespace Rhombus
         {
             rectangle = new Rectangle(0, 0, ClientSize.Width, ClientSize.Height);
         }
+
+        private void btnRhombus_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

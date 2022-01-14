@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uebungsaufgaben", "Uebungsaufgaben\Uebungsaufgaben.csproj", "{16292629-E45E-42D5-BB13-95E7253A8875}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhombus", "Rhombus\Rhombus.csproj", "{89D29407-199B-4085-9986-7EB575E82868}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16292629-E45E-42D5-BB13-95E7253A8875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16292629-E45E-42D5-BB13-95E7253A8875}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16292629-E45E-42D5-BB13-95E7253A8875}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16292629-E45E-42D5-BB13-95E7253A8875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D29407-199B-4085-9986-7EB575E82868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D29407-199B-4085-9986-7EB575E82868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D29407-199B-4085-9986-7EB575E82868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D29407-199B-4085-9986-7EB575E82868}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

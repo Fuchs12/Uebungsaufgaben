@@ -48,11 +48,6 @@ namespace Rhombus
             graphics.DrawPath(blackPen, path);
         }
 
-        private void Form1_ResizeEnd(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Resize(object sender, EventArgs e)
         {
             Skalieren();

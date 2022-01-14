@@ -11,9 +11,9 @@ using System.Drawing.Drawing2D;
 
 namespace Rhombus
 {
-    public partial class Form1 : Form
+    public partial class Rhombus : Form
     {
-        public Form1()
+        public Rhombus()
         {
             InitializeComponent();
         }

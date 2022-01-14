@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Rhombus
 {
-    public partial class UebungsaufgabeMenue : Form
+    public partial class Menue : Form
     {
-        public UebungsaufgabeMenue()
+        public Menue()
         {
             InitializeComponent();
         }

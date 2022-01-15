@@ -23,7 +23,7 @@ namespace Rhombus
             Skalieren();
         }
 
-        Pen blackPen = new Pen(Color.Black);
+        Pen BluePen = new Pen(Color.Blue, 2F);
         Rectangle rectangle;
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -36,7 +36,7 @@ namespace Rhombus
             Point rechtsMitte = new Point(rectangle.Width + rectangle.X, rectangle.Y + rectangle.Height/2);
             Point linksMitte = new Point(rectangle.X, rectangle.Y + rectangle.Height/2);
 
-            graphics.DrawRectangle(blackPen, rectangle);
+            graphics.DrawRectangle(BluePen, rectangle);
             
             GraphicsPath path = new GraphicsPath();
             path.AddLine(obenMitte, linksMitte);
@@ -45,7 +45,7 @@ namespace Rhombus
             path.AddLine(rechtsMitte, obenMitte);
             path.CloseFigure();
 
-            graphics.DrawPath(blackPen, path);
+            graphics.DrawPath(BluePen, path);
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -67,7 +67,6 @@ namespace Rhombus
             {
                 if (frm.Name == "Menue")
                 {
-                    Form form = frm;
                     frm.WindowState = FormWindowState.Normal;
                 }
             }

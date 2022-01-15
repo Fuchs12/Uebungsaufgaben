@@ -20,7 +20,11 @@ namespace Rhombus
             Rhombus frmRhombus = new Rhombus();
             frmRhombus.Show();
             Minimize();
-            
+        }
+
+        private void Maximize()
+        {
+            this.WindowState = FormWindowState.Normal;
         }
 
         private void Minimize()

@@ -30,7 +30,6 @@ namespace Uebungsaufgaben
                 graphics.DrawLine(blackPen, rectangle.X + rectangle.Width, y, y, rectangle.Y + rectangle.Height);
             }
         }
-
         private void Schraffierung_FormClosing(object sender, FormClosingEventArgs e)
         {
             FormCollection fc = Application.OpenForms;
@@ -42,6 +41,11 @@ namespace Uebungsaufgaben
                     frm.WindowState = FormWindowState.Normal;
                 }
             }
+        }
+
+        private void Schraffierung_Resize(object sender, System.EventArgs e)
+        {
+            Refresh();
         }
     }
 }

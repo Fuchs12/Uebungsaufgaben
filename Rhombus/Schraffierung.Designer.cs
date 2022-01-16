@@ -40,6 +40,7 @@ namespace Uebungsaufgaben
             this.Text = "Schraffierung";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Schraffierung_FormClosing);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Schraffierung_Paint);
+            this.Resize += new System.EventHandler(this.Schraffierung_Resize);
             this.ResumeLayout(false);
 
         }

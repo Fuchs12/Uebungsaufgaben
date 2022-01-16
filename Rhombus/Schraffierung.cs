@@ -25,11 +25,18 @@ namespace Uebungsaufgaben
             graphics.DrawRectangle(blackPen, rectangle);
 
             int abstand = 10;
-            int x = rectangle.X+abstand;
+            int x = rectangle.X + abstand;
+
             while (x < rectangle.Width + rectangle.X)
             {
                 graphics.DrawLine(blackPen, x, rectangle.Y, rectangle.X, x);
                 x += abstand;
+            }
+            int y = rectangle.Y;
+            while (y < rectangle.Height + rectangle.Y)
+            {
+                graphics.DrawLine(blackPen, rectangle.X + rectangle.Width, y, y, rectangle.Y + rectangle.Height);
+                y += 10;
             }
         }
 

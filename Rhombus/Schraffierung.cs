@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace Uebungsaufgaben
@@ -13,9 +8,9 @@ namespace Uebungsaufgaben
         public Schraffierung()
         {
             InitializeComponent();
-            rectangle = new Rectangle(10,10,100,100);
+            rectangle = new Rectangle(10, 10, 500, 500);
         }
-        private Rectangle rectangle;
+        public Rectangle rectangle;
         private Pen blackPen = new Pen(Color.Black);
 
         private void Schraffierung_Paint(object sender, PaintEventArgs e)
@@ -25,18 +20,14 @@ namespace Uebungsaufgaben
             graphics.DrawRectangle(blackPen, rectangle);
 
             int abstand = 10;
-            int x = rectangle.X + abstand;
 
-            while (x < rectangle.Width + rectangle.X)
+            for (int x = rectangle.X + abstand; x < rectangle.Width + rectangle.X; x += abstand)
             {
                 graphics.DrawLine(blackPen, x, rectangle.Y, rectangle.X, x);
-                x += abstand;
             }
-            int y = rectangle.Y;
-            while (y < rectangle.Height + rectangle.Y)
+            for (int y = rectangle.Y; y < rectangle.Height + rectangle.Y; y += 10)
             {
                 graphics.DrawLine(blackPen, rectangle.X + rectangle.Width, y, y, rectangle.Y + rectangle.Height);
-                y += 10;
             }
         }
 

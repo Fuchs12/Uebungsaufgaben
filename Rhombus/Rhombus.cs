@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace Rhombus
 {
@@ -30,14 +24,14 @@ namespace Rhombus
         {
             Graphics graphics = e.Graphics;
             graphics.SmoothingMode = SmoothingMode.HighQuality;
-            
-            Point obenMitte = new Point(rectangle.X + rectangle.Width/2 ,rectangle.Y);
-            Point untenMitte = new Point(rectangle.X + rectangle.Width/2,rectangle.Height + rectangle.Y);
-            Point rechtsMitte = new Point(rectangle.Width + rectangle.X, rectangle.Y + rectangle.Height/2);
-            Point linksMitte = new Point(rectangle.X, rectangle.Y + rectangle.Height/2);
+
+            Point obenMitte = new Point(rectangle.X + rectangle.Width / 2, rectangle.Y);
+            Point untenMitte = new Point(rectangle.X + rectangle.Width / 2, rectangle.Height + rectangle.Y);
+            Point rechtsMitte = new Point(rectangle.Width + rectangle.X, rectangle.Y + rectangle.Height / 2);
+            Point linksMitte = new Point(rectangle.X, rectangle.Y + rectangle.Height / 2);
 
             graphics.DrawRectangle(BluePen, rectangle);
-            
+
             GraphicsPath path = new GraphicsPath();
             path.AddLine(obenMitte, linksMitte);
             path.AddLine(linksMitte, untenMitte);

@@ -28,7 +28,7 @@ namespace Uebungsaufgaben
             int x = rectangle.X+abstand;
             while (x < rectangle.Width + rectangle.X)
             {
-                graphics.DrawLine(blackPen, x, rectangle.Y, rectangle.X, rectangle.Y + x);
+                graphics.DrawLine(blackPen, x, rectangle.Y, rectangle.X, x);
                 x += abstand;
             }
         }

@@ -40,6 +40,7 @@ namespace Uebungsaufgaben
             this.Text = "Schneckenbau";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Schneckenbau_FormClosing);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Schneckenbau_Paint);
+            this.Resize += new System.EventHandler(this.Schneckenbau_Resize);
             this.ResumeLayout(false);
 
         }

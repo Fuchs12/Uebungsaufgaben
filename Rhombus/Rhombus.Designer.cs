@@ -37,8 +37,7 @@ namespace Rhombus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 445);
             this.Name = "Rhombus";
-            this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Rhombus";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Rhombus_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);

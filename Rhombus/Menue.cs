@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Uebungsaufgaben;
 
 namespace Rhombus
 {
@@ -30,6 +31,13 @@ namespace Rhombus
         private void Minimize()
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnSchraffierung_Click(object sender, EventArgs e)
+        {
+            Schraffierung frmSchraffierung = new Schraffierung();
+            frmSchraffierung.Show();
+            Minimize();
         }
     }
 }

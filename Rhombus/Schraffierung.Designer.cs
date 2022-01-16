@@ -29,10 +29,19 @@ namespace Uebungsaufgaben
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Schraffierung
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Schraffierung";
             this.Text = "Schraffierung";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Schraffierung_FormClosing);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Schraffierung_Paint);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -34,5 +34,12 @@ namespace Rhombus
             frmSchraffierung.Show();
             Minimize();
         }
+
+        private void btnSchneckenbau_Click(object sender, EventArgs e)
+        {
+            Schneckenbau frmSchneckenbau = new Schneckenbau();
+            frmSchneckenbau.Show();
+            Minimize();
+        }
     }
 }
